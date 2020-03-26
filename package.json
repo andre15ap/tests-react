@@ -6,18 +6,24 @@
     "@testing-library/jest-dom": "^5.2.0",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
     "immer": "^6.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "coverage": "react-scripts test --coverage --wathAll=false",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "coverageDirectory": "./src/__tests__/coverage"
   },
   "browserslist": {
     "production": [
@@ -33,6 +39,7 @@
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",
+    "axios-mock-adapter": "^1.18.1",
     "jest-localstorage-mock": "^2.4.0",
     "react-app-rewired": "^2.1.5"
   }

@@ -1,5 +1,5 @@
-import reducer, { INITIAL_STATE } from '../../store/modules/techs/reducer';
-import { addTech } from '../../store/modules/techs/actions';
+import reducer, { INITIAL_STATE } from '../../../store/modules/techs/reducer';
+import { addTech } from '../../../store/modules/techs/actions';
 
 describe('Techs reducer', () => {
     it('ADD_TECH', () => {
